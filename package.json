@@ -1,0 +1,11 @@
+{
+  "name": "luck-token",
+  "version": "0.0.1",
+  "description": "幸运币，基于区块链的祝福系统代币",
+  "scripts": {
+    "test": "truffle test"
+  },
+  "devDependencies": {
+    "zeppelin-solidity": "1.7.0"
+  }
+}
