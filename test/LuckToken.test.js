@@ -92,7 +92,7 @@ contract('LuckToken', function(accounts) {
 			luckToken.balanceOf(accounts[3]).then(function(val){
 				expect(val.toNumber()).to.equal(10000);
 				done();
-			})
+			});
 		});
 	});
 	
