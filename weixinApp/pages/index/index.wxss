@@ -1,0 +1,31 @@
+/**index.wxss**/
+.header {
+  display: flex;
+  align-items: left;
+  margin: 20rpx;
+
+  width: 100%;
+  height: 40px;
+}
+
+.web3-status {
+  margin-left: 10px;
+}
+
+.bless-words-list {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  border: 1px;
+
+  height: 300px;
+}
+
+.bless-item {
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.bless-btns {
+  margin-top: 20px;
+}

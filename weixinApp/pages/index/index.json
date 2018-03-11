@@ -1,0 +1,5 @@
+{
+    "usingComponents": {
+        "webthree-status": "../../compoments/web3-status/web3-status"
+    }
+}

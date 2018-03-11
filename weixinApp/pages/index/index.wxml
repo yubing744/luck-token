@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="header">
+    <webthree-status class="web3-status"></webthree-status>
+  </view>
+
+  <scroll-view scroll-y class="bless-words-list">
+    <block wx:for="{{blesses}}" wx:for-item="bless" wx:key="*this">
+      <view class="bless-item">
+        祝福语：{{bless}}
+      </view>
+    </block>
+  </scroll-view>
+
+  <view class="bless-btns">
+    <text class="user-motto" catchtouchstart="touchstart" catchtouchend="touchend">发送祝福</text>
+  </view>
+</view>
