@@ -15,25 +15,22 @@ function NetStatusService(app){
  */
 NetStatusService.prototype.init = function(){
     console.log("NetStatusService init ...");
-
-    var web3 = this.app.getBean("web3");
-    console.log("netStatus web3: %j", web3);
-
-    web3.eth.getAccounts(function(error, accounts) {
-        if (error) {
-            return console.log(error);
-        }
-
-        console.log("accounts:%j", accounts);
-    });
 };
 
 NetStatusService.prototype.getWeb3Status = function(next){
-    var that = this;
+    var web3 = this.app.getBean("web3");
+    console.log("netStatus web3: %j", web3);
 
-    return next(null, {
-        status: "已经连接",
-        name: "测试网络"
+    web3.eth.getBlockNumber(function(error, blockNumber) {
+        if (error) {
+            return next(null, {
+                status: "连接失败",
+            });
+        }
+
+        return next(null, {
+            status: "已经连接",
+        });
     });
 };
 

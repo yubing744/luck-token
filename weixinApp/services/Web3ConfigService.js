@@ -18,9 +18,13 @@ function Web3ConfigService(app){
  */
 Web3ConfigService.prototype.config = function(){
     console.log("Web3ConfigService init ...");
+    var cfg = this.app.cfg;
     var web3 = this.app.getBean("web3");
 
-    var web3Provider = new WxHttpProvider('https://eth-test.kuick.cn');
+    var network = cfg.networks[cfg.network];
+    console.log("Web3 network config: %j", network);
+
+    var web3Provider = new WxHttpProvider(network.url);
     web3.setProvider(web3Provider);
 };
 

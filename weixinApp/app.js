@@ -6,6 +6,7 @@ var LuckBlessService = require("./services/LuckBlessService");
 
 //app.js
 App({
+    cfg: require("./config.js"),
     globalData:{
         beans: {}
     },
