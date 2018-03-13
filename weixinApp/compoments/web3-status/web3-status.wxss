@@ -1,4 +1,5 @@
 /* 这里的样式只应用于这个自定义组件 */
 .web3-status {
     flex-direction:row;
+    width: 300rpx;
 }

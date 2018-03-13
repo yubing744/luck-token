@@ -13,6 +13,6 @@
   </scroll-view>
 
   <view class="bless-btns">
-    <text class="user-motto" catchtouchstart="touchstart" catchtouchend="touchend">发送祝福</text>
+    <button type="primary" bindtap="primary" size="mini">发送祝福</button>
   </view>
 </view>

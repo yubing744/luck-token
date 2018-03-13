@@ -1,24 +1,30 @@
 /**index.wxss**/
 .header {
   display: flex;
-  align-items: left;
-  margin: 20rpx;
+  flex-direction: row;
 
-  width: 100%;
-  height: 40px;
+  justify-content: flex-end;
+  align-items: center;
+
+  margin: 20rpx 20rpx 20rpx 20rpx;
+
+  width: 750rpx;
+  height: 40rpx;
 }
 
 .web3-status {
-  margin-left: 10px;
+  margin-left: 0px;
 }
 
 .bless-words-list {
   display: flex;
   flex-direction: column;
+
   align-items: left;
+  
   border: 1px;
 
-  height: 300px;
+  height: 800rpx;
 }
 
 .bless-item {
@@ -27,5 +33,9 @@
 }
 
 .bless-btns {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
   margin-top: 20px;
 }
