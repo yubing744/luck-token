@@ -1,5 +1,6 @@
 {
     "usingComponents": {
-        "webthree-status": "../../compoments/web3-status/web3-status"
+        "webthree-status": "../../compoments/web3-status/web3-status",
+        "luck-words": "../../compoments/luck-words/luck-words"
     }
 }

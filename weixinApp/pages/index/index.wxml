@@ -4,13 +4,9 @@
     <webthree-status class="web3-status"></webthree-status>
   </view>
 
-  <scroll-view scroll-y class="bless-words-list">
-    <block wx:for="{{blesses}}" wx:for-item="bless" wx:key="*this">
-      <view class="bless-item">
-        祝福语：{{bless}}
-      </view>
-    </block>
-  </scroll-view>
+  <view class="content">
+    <luck-words class="luck-words"></luck-words>
+  </view>
 
   <view class="bless-btns">
     <button type="primary" bindtap="primary" size="mini">发送祝福</button>

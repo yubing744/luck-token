@@ -12,24 +12,19 @@
   height: 40rpx;
 }
 
+.content {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+}
+
 .web3-status {
   margin-left: 0px;
 }
 
-.bless-words-list {
-  display: flex;
-  flex-direction: column;
-
-  align-items: left;
-  
-  border: 1px;
-
-  height: 800rpx;
-}
-
-.bless-item {
-  margin: 20rpx;
-  border-radius: 50%;
+.luck-words {
+    width: 100%;
 }
 
 .bless-btns {
