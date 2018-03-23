@@ -15,6 +15,11 @@ Component({
             self.setData({
                 blesses: blesses
             });
-        })
+        });
+
+        //监听祝福事件
+        luckWordsService.watchBless(function(evt){
+            console.log("event: %j", evt);
+        });
     }
 });
